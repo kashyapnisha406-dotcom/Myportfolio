@@ -1,42 +1,66 @@
-/* Google Font for professional look */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/* Basic Global Setup */
 body {
     font-family: 'Poppins', sans-serif;
-
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    color: #333;
 }
 
+#Contact {
+    margin-top: auto; 
+}
 
+/* Custom Yellow Accent Variables */
+.text-warning-custom {
+    color: #ffb703 !important;
+}
 
+.btn-warning-custom {
+    background-color: #ffb703;
+    color: #000;
+    border: none;
+}
 
+.btn-warning-custom:hover {
+    background-color: #fb8500;
+    color: #000;
+}
 
-/* Brand Name Styling */
+/* Header & Navbar Styling */
+.navbar {
+    border-bottom: 3px solid #ffb703;
+}
+
 .myname {
     font-size: 22px;
     letter-spacing: 1px;
-    color: #333 !important;
+    color: #111827 !important;
 }
 
-/* Navbar Links Styling */
 .mynav .nav-link {
     font-weight: 500;
-    color: #555 !important;
+    color: #4b5563 !important;
     transition: all 0.3s ease;
     font-size: 15px;
 }
 
-/* Hover Effect: Yellow line niche aayegi */
 .mynav .nav-link:hover {
     color: #fb8500 !important;
 }
 
-/* Active Link Style */
 .mynav .nav-link.active {
     color: #fb8500 !important;
     font-weight: 700;
 }
 
-/* Contact Button Style (Ise thoda highlight kiya hai) */
+/* Contact Button Styling */
 .contact-btn {
     background-color: #ffb703;
     color: #000 !important;
@@ -44,73 +68,53 @@ body {
     border-radius: 8px;
     font-weight: 600 !important;
     box-shadow: 0 4px 10px rgba(255, 183, 3, 0.2);
+    transition: all 0.3s ease;
 }
 
 .contact-btn:hover {
-    /* background-color: #fb8500; */
     transform: translateY(-2px);
-    border: 1px solid #ffb703;
     box-shadow: 0 6px 15px rgba(255, 183, 3, 0.3);
 }
 
-/* Custom shadow for navbar */
-.navbar {
-    border-bottom: 3px solid #ffb703;
-}
-
-
-.myhero h1
-{
-text-align: center;
-color: #ffb703;
-margin-top: 20px;
-}
-
-
-.myhero span
-{
-color: #000;
-}
-
-.myhero p
-{
-text-align: center;
-
-
-}
-
+/* Hero Section */
 .hero-section {
-    min-height: 80vh; /* Screen ki height ke hisaab se adjust hoga */
+    min-height: 75vh;
     display: flex;
     align-items: center;
     background-color: #ffffff;
 }
 
-h1.display-3 {
-    line-height: 1.1;
-    color: #222;
+.hero-title {
+    line-height: 1.2;
+    color: #111827;
 }
 
-.text-warning {
-    color: #ffb703 !important; /* Aapka signature yellow color */
+.hero-img-container {
+    max-width: 500px;
+    width: 100%;
 }
 
 .hero-img {
-    border: 10px solid #fff;
+    border: 6px solid #fff;
     transition: transform 0.3s ease;
 }
 
 .hero-img:hover {
-    transform: scale(1.02); /* Halka sa zoom effect */
+    transform: scale(1.02);
 }
 
-
+/* Skills Cards Styling */
 .skill-card {
-    background: #fff;
+    background: #ffffff;
     border-radius: 15px;
-    border: 1px solid #eee;
+    border: 1px solid #e5e7eb;
     transition: all 0.3s ease;
     cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .skill-card:hover {
@@ -120,7 +124,7 @@ h1.display-3 {
 }
 
 .skill-card img {
-    filter: grayscale(20%);
+    filter: grayscale(10%);
     transition: all 0.3s ease;
 }
 
@@ -130,27 +134,29 @@ h1.display-3 {
 }
 
 .skill-card h6 {
-    color: #555;
+    color: #4b5563;
     transition: all 0.3s ease;
+    font-size: 14px;
 }
 
 .skill-card:hover h6 {
     color: #000;
 }
 
-
+/* Project Cards Styling */
 .project-card {
-    border-radius: 20px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    background: #ffffff;
 }
 
 .project-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
 }
 
 .project-img-wrapper {
-    height: 250px;
+    height: 220px;
     overflow: hidden;
     background: #e9ecef;
 }
@@ -163,131 +169,60 @@ h1.display-3 {
 }
 
 .project-card:hover .project-img-wrapper img {
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .badge {
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 11px;
 }
 
-
+/* Footer Section */
 footer {
-    background-color: #1a1a1a !important; /* Dark theme footer */
+    background-color: transparent !important;
 }
 
 .footer-link {
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .footer-link:hover {
-    color: #ffb703 !important; /* Yellow hover */
-}
-
-.text-warning {
     color: #ffb703 !important;
+    background: rgba(255, 255, 255, 0.1);
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-#Contact {
-    margin-top: auto; 
-}
-
-
-
-
-.project-card {
-    display: flex;
-    align-items: center;
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 24px;
-    margin-bottom: 30px; /* Isse niche wale section (Ready to Collaborate) se gap banega */
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); /* Soft shadow aapke cards jaisi */
-    gap: 32px;
-}
-
-.project-image-container {
-    flex: 1;
-    max-width: 350px;
-}
-
-.project-image {
-    width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-.project-info {
-    flex: 2;
-}
-
-.project-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin-bottom: 12px;
-}
-
-.project-description {
-    font-size: 16px;
-    color: #555555;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.launch-link {
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffc107; /* Aapke yellow accent match karne ke liye */
-    text-decoration: none;
-    transition: transform 0.2s ease;
-    display: inline-block;
-}
-
-.launch-link:hover {
-    transform: translateX(5px); /* Hover par arrow thoda move hoga */
-}
-
-/* Responsive check for Mobile */
-@media (max-width: 768px) {
-    .project-card {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
-    .project-image-container {
-        max-width: 100%;
-    }
-}
-
-
-
-@media (max-width: 991px) {
+/* Responsive Custom Breakpoints Fix */
+@media (max-width: 991.98px) {
     .hero-section {
-        padding-top: 50px;
-        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        min-height: auto;
+    }
+
+    .mynav {
+        background-color: #f9fafb;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+
+    .project-img-wrapper {
+        height: 200px;
     }
 }
 
-
-
-@media (max-width: 991px) {
-    .mynav {
-        padding: 20px 0;
-        text-align: center;
+@media (max-width: 575.98px) {
+    .hero-title {
+        font-size: 1.8rem;
     }
-    .contact-btn {
-        margin-top: 10px;
-        display: inline-block;
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .project-img-wrapper {
+        height: 180px;
     }
 }
