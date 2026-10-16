@@ -3,94 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Nisha Kashyap | Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
-  <div class="container"> <a class="navbar-brand myname fw-bold" href="#">NISHA <span class="text-warning">KASHYAP</span></a>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 sticky-top">
+  <div class="container"> 
+    <a class="navbar-brand myname fw-bold" href="#">NISHA <span class="text-warning-custom">KASHYAP</span></a>
     
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
-      <div class="navbar-nav ms-auto mynav">
+      <div class="navbar-nav ms-auto mynav text-center py-3 py-lg-0">
         <a class="nav-link mylink mx-2" href="#work">Work</a>
         <a class="nav-link mylink mx-2" href="#skills1">Skills</a>
-        <a class="nav-link mylink ms-2 contact-btn" href="#Contact">Contact</a>
+        <a class="nav-link mylink mx-2 contact-btn text-dark text-decoration-none mt-2 mt-lg-0 d-inline-block" href="#Contact">Contact</a>
       </div>
     </div>
   </div>
 </nav>
 
+<!-- Hero Section -->
 <section class="hero-section py-5">
     <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center gy-4">
             <div class="col-lg-6 text-lg-start text-center">
-                <h1 class="display-3 fw-bold mb-3">
-                    I Design Experiences & <br>
-                    <span class="text-warning">Code Solutions.</span>
+                <h1 class="display-4 fw-bold mb-3 hero-title">
+                    I Design Experiences & <br class="d-none d-sm-inline">
+                    <span class="text-warning-custom">Code Solutions.</span>
                 </h1>
-                <p class="lead text-muted mb-4">
-                    UI/UX Designer & Frontend Developer specializing in <br> 
-                    modern Fintech systems and seamless interfaces.
+                <p class="lead text-muted mb-4 hero-subtitle">
+                    UI/UX Designer & Frontend Developer specializing in modern Fintech systems and seamless interfaces.
                 </p>
-                <div class="d-flex gap-3 justify-content-lg-start justify-content-center">
-                    <a href="#work" class="btn btn-warning btn-lg px-4 fw-bold shadow-sm">View My Work</a>
+                <div class="d-flex gap-3 justify-content-lg-start justify-content-center flex-wrap">
+                    <a href="#work" class="btn btn-warning-custom btn-lg px-4 fw-bold shadow-sm">View My Work</a>
                     <a href="img/Resume.pdf" target="_blank" class="btn btn-outline-dark btn-lg px-4">My Resume</a>
                 </div>
             </div>
 
-            <div class="col-lg-6 text-center mt-5 mt-lg-0">
-                <img src="img/Gemini_Generated_Image_652a1t652a1t652a.png" 
-                     alt="Design Showcase" 
-                     class="img-fluid rounded-4 shadow-lg hero-img">
+            <div class="col-lg-6 text-center">
+                <div class="hero-img-container mx-auto">
+                    <img src="img/Gemini_Generated_Image_652a1t652a1t652a.png" 
+                         alt="Design Showcase" 
+                         class="img-fluid rounded-4 shadow-lg hero-img"
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400/111827/FFB703?text=UI%2FUX+Frontend+Developer';">
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="skills1" class="py-5 bg-white">
+<!-- Skills / Expertise Section -->
+<section id="skills1" class="py-5 bg-white border-top">
     <div class="container text-center">
-        <h2 class="fw-bold mb-2">My <span class="text-warning">Expertise</span></h2>
-        <p class="text-muted mb-5">The tools and technologies I use to bring ideas to life.</p>
+        <h2 class="fw-bold mb-2">My <span class="text-warning-custom">Expertise</span></h2>
+        <p class="text-muted mb-4 mb-md-5">The tools and technologies I use to bring ideas to life.</p>
         
-        <div class="row g-4 justify-content-center">
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="skill-card shadow-sm p-4">
+        <div class="row g-3 g-md-4 justify-content-center">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-card shadow-sm p-3 p-md-4">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" width="40">
                     <h6 class="mt-3 mb-0 fw-bold">Figma</h6>
                 </div>
             </div>
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="skill-card shadow-sm p-4">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-card shadow-sm p-3 p-md-4">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" width="40">
                     <h6 class="mt-3 mb-0 fw-bold">Photoshop</h6>
                 </div>
             </div>
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="skill-card shadow-sm p-4">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-card shadow-sm p-3 p-md-4">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="40">
                     <h6 class="mt-3 mb-0 fw-bold">HTML5</h6>
                 </div>
             </div>
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="skill-card shadow-sm p-4">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-card shadow-sm p-3 p-md-4">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="40">
                     <h6 class="mt-3 mb-0 fw-bold">CSS3</h6>
                 </div>
             </div>
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="skill-card shadow-sm p-4">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-card shadow-sm p-3 p-md-4">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" width="40">
                     <h6 class="mt-3 mb-0 fw-bold">JavaScript</h6>
                 </div>
             </div>
-            <div class="col-6 col-md-3 col-lg-2">
-                <div class="skill-card shadow-sm p-4">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <div class="skill-card shadow-sm p-3 p-md-4">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="40">
                     <h6 class="mt-3 mb-0 fw-bold">Bootstrap</h6>
                 </div>
@@ -99,28 +109,31 @@
     </div>
 </section>
 
+<!-- Projects Section -->
 <section id="work" class="py-5 bg-light">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="fw-bold">Selected <span class="text-warning">Work</span></h2>
+            <h2 class="fw-bold">Selected <span class="text-warning-custom">Work</span></h2>
             <p class="text-muted">Real-world projects developed with precision and logic.</p>
         </div>
 
         <div class="row g-4">
             <!-- Finance CRM -->
             <div class="col-lg-6">
-                <div class="card project-card border-0 shadow-sm overflow-hidden h-100">
+                <div class="card project-card border-0 shadow-sm overflow-hidden h-100 d-flex flex-column">
                     <div class="project-img-wrapper">
-                        <img src="img/image.png" class="card-img-top" alt="CRM Dashboard">
+                        <img src="img/image.png" class="card-img-top" alt="CRM Dashboard" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x350/111827/FFB703?text=Finance+CRM+Dashboard';">
                     </div>
-                    <div class="card-body p-4">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h4 class="fw-bold mb-0">Finance CRM Dashboard</h4>
-                            <span class="badge bg-warning text-dark">Live Code</span>
+                    <div class="card-body p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap gap-2">
+                                <h4 class="fw-bold mb-0 fs-5">Finance CRM Dashboard</h4>
+                                <span class="badge bg-warning text-dark">Live Code</span>
+                            </div>
+                            <p class="text-muted small">Ek advanced dashboard jo loan leads aur disbursements ko track karta hai. Isme maine real-time data handling aur responsive layout par kaam kiya hai.</p>
                         </div>
-                        <p class="text-muted">Ek advanced dashboard jo loan leads aur disbursements ko track karta hai. Isme maine real-time data handling aur responsive layout par kaam kiya hai.</p>
-                        <div class="mt-4">
-                            <a href="https://kashyapnisha406-dotcom.github.io/loancrmform/" target="_blank" class="btn btn-dark px-4 me-2">Live Demo</a>
+                        <div class="mt-3 pt-2 d-flex flex-wrap gap-2">
+                            <a href="https://kashyapnisha406-dotcom.github.io/loancrmform/" target="_blank" class="btn btn-dark px-4">Live Demo</a>
                             <a href="#" class="btn btn-outline-dark px-4">Case Study</a>
                         </div>
                     </div>
@@ -129,18 +142,20 @@
 
             <!-- Ladgikart -->
             <div class="col-lg-6">
-                <div class="card project-card border-0 shadow-sm overflow-hidden h-100">
+                <div class="card project-card border-0 shadow-sm overflow-hidden h-100 d-flex flex-column">
                     <div class="project-img-wrapper">
-                        <img src="img/image (2).png" class="card-img-top" alt="Ladgikart UI">
+                        <img src="img/image (2).png" class="card-img-top" alt="Ladgikart UI" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x350/111827/FFB703?text=Ladgikart+E-commerce';">
                     </div>
-                    <div class="card-body p-4">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h4 class="fw-bold mb-0">Ladgikart E-commerce</h4>
-                            <span class="badge bg-dark text-white">UI/UX Design</span>
+                    <div class="card-body p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap gap-2">
+                                <h4 class="fw-bold mb-0 fs-5">Ladgikart E-commerce</h4>
+                                <span class="badge bg-dark text-white">UI/UX Design</span>
+                            </div>
+                            <p class="text-muted small">Modern e-commerce interface jo pehle Figma mein design kiya gaya aur phir pixel-perfect HTML/CSS mein convert kiya gaya.</p>
                         </div>
-                        <p class="text-muted">Modern e-commerce interface jo pehle Figma mein design kiya gaya aur phir pixel-perfect HTML/CSS mein convert kiya gaya.</p>
-                        <div class="mt-4">
-                            <a href="#" target="_blank" class="btn btn-dark px-4 me-2">View Project</a>
+                        <div class="mt-3 pt-2 d-flex flex-wrap gap-2">
+                            <a href="#" target="_blank" class="btn btn-dark px-4">View Project</a>
                             <a href="#" class="btn btn-outline-dark px-4">Figma File</a>
                         </div>
                     </div>
@@ -149,19 +164,21 @@
 
             <!-- Live News Web Application -->
             <div class="col-lg-6">
-                <div class="card project-card border-0 shadow-sm overflow-hidden h-100">
+                <div class="card project-card border-0 shadow-sm overflow-hidden h-100 d-flex flex-column">
                     <div class="project-img-wrapper">
-                        <img src="img/live news.png" class="card-img-top" alt="Live News Portal">
+                        <img src="img/live news.png" class="card-img-top" alt="Live News Portal" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x350/111827/FFB703?text=Live+News+Web+App';">
                     </div>
-                    <div class="card-body p-4">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h4 class="fw-bold mb-0">Live News Web App</h4>
-                            <span class="badge bg-danger text-white">Live API & Dark Theme</span>
+                    <div class="card-body p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap gap-2">
+                                <h4 class="fw-bold mb-0 fs-5">Live News Web App</h4>
+                                <span class="badge bg-danger text-white">Live API & Dark Theme</span>
+                            </div>
+                            <p class="text-muted small">A modern dark-themed live news aggregator featuring categorical filters, search functionality, dynamic grid cards, and real-time updates via API fetching.</p>
                         </div>
-                        <p class="text-muted">A modern dark-themed live news aggregator featuring categorical filters (India, Business, Tech, Entertainment), search functionality, dynamic grid cards, and real-time news updates via JavaScript API fetching.</p>
-                        <div class="mt-4">
-                            <a href="https://news-app-frontend-tau.vercel.app/" target="_blank" class="btn btn-dark px-4 me-2">Live Demo</a>
-                            <a href="https://github.com/kashyapnisha406-dotcom/news-app-frontend" target="_blank" class="btn btn-dark px-4 me-2" class="btn btn-outline-dark px-4">View Code</a>
+                        <div class="mt-3 pt-2 d-flex flex-wrap gap-2">
+                            <a href="https://news-app-frontend-tau.vercel.app/" target="_blank" class="btn btn-dark px-4">Live Demo</a>
+                            <a href="https://github.com/kashyapnisha406-dotcom/news-app-frontend" target="_blank" class="btn btn-outline-dark px-4">View Code</a>
                         </div>
                     </div>
                 </div>
@@ -169,34 +186,38 @@
 
             <!-- AI Chatbot Project -->
             <div class="col-lg-6">
-                <div class="card project-card border-0 shadow-sm overflow-hidden h-100">
+                <div class="card project-card border-0 shadow-sm overflow-hidden h-100 d-flex flex-column">
                     <div class="project-img-wrapper">
-                        <img src="img/chatbot.png" class="card-img-top" alt="AI Chatbot Assistant">
+                        <img src="img/chatbot.png" class="card-img-top" alt="AI Chatbot Assistant" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x350/111827/FFB703?text=AI+Support+Chatbot';">
                     </div>
-                    <div class="card-body p-4">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h4 class="fw-bold mb-0">AI Support Chatbot</h4>
-                            <span class="badge bg-dark text-white">AI Interface</span>
+                    <div class="card-body p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap gap-2">
+                                <h4 class="fw-bold mb-0 fs-5">AI Support Chatbot</h4>
+                                <span class="badge bg-dark text-white">AI Interface</span>
+                            </div>
+                            <p class="text-muted small">Designed an intelligent conversational AI chatbot UI. Focused on reducing response times with automated flows and prompt chips.</p>
                         </div>
-                        <p class="text-muted">Designed an intelligent conversational AI chatbot UI. Focused on reducing response times with automated flows and prompt chips.</p>
-                        <div class="mt-4">
-                            <a href="https://kashyapnisha406-dotcom.github.io/Mychatbot/" target="_blank" class="btn btn-dark px-4 me-2">Launch Chatbot</a>
+                        <div class="mt-3 pt-2 d-flex flex-wrap gap-2">
+                            <a href="https://kashyapnisha406-dotcom.github.io/Mychatbot/" target="_blank" class="btn btn-dark px-4">Launch Chatbot</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Loan Application Lead Form -->
-            <div class="col-12 mt-4">
-                <div class="card project-card border-0 shadow-sm p-3">
-                    <div class="row align-items-center">
+            <!-- Loan Application Lead Form Horizontal Banner Card -->
+            <div class="col-12 mt-2">
+                <div class="card border-0 shadow-sm p-3 p-md-4 rounded-4 bg-white">
+                    <div class="row align-items-center gy-3">
                         <div class="col-md-4">
-                            <img src="img/Gemini_Generated_Image_27bnyd27bnyd27bn.png" class="img-fluid rounded-3" alt="CRM Form">
+                            <img src="img/Gemini_Generated_Image_27bnyd27bnyd27bn.png" class="img-fluid rounded-3 w-100" style="max-height: 200px; object-fit: cover;" alt="CRM Form" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x300/111827/FFB703?text=Loan+Application+Form';">
                         </div>
-                        <div class="col-md-8 mt-3 mt-md-0">
-                            <h5 class="fw-bold">Loan Application Lead Form</h5>
-                            <p class="text-muted small">Optimized form for high conversion. Built with Vanilla JS for instant validation.</p>
-                            <a href="https://kashyapnisha406-dotcom.github.io/loancrmform/" target="_blank" class="text-warning fw-bold text-decoration-none">Launch App →</a>
+                        <div class="col-md-8">
+                            <h5 class="fw-bold fs-4 mb-2">Loan Application Lead Form</h5>
+                            <p class="text-muted small mb-3">Optimized form for high conversion rates. Built with Vanilla JS for instant dynamic input validation and clean UI response.</p>
+                            <a href="https://kashyapnisha406-dotcom.github.io/loancrmform/" target="_blank" class="text-warning-custom fw-bold text-decoration-none d-inline-flex align-items-center gap-1">
+                                Launch App <span>→</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -206,26 +227,27 @@
     </div>
 </section>
 
+<!-- Contact & Footer Section -->
 <section id="Contact" class="py-5 bg-dark text-white border-top border-secondary border-opacity-25">
     <div class="container text-center">
-        <h2 class="fw-bold mb-4">Ready to <span class="text-warning">Collaborate?</span></h2>
-        <p class="text-secondary mb-4">I'm currently looking for new opportunities in UI/UX Design and Frontend Development.</p>
+        <h2 class="fw-bold mb-3">Ready to <span class="text-warning-custom">Collaborate?</span></h2>
+        <p class="text-secondary mb-4 mx-auto" style="max-width: 600px;">I'm currently open for Work From Home (WFH) & Remote opportunities in UI/UX Design and Frontend Development.</p>
         
-        <div class="d-flex justify-content-center gap-4 mb-5">
-            <a href="https://www.linkedin.com/in/nisha-kashyap-2a70a53b1/" target="_blank" class="text-white text-decoration-none footer-link">LinkedIn</a>
-            <a href="mailto:kashyapnisha406@gmail.com" class="text-white text-decoration-none footer-link">Email</a>
-            <a href="https://wa.me/9773911475" target="_blank" class="text-white text-decoration-none footer-link">WhatsApp</a>
+        <div class="d-flex justify-content-center gap-3 gap-md-4 mb-4 flex-wrap">
+            <a href="https://www.linkedin.com/in/nisha-kashyap-2a70a53b1/" target="_blank" class="text-white text-decoration-none footer-link px-3 py-2 rounded">LinkedIn</a>
+            <a href="mailto:kashyapnisha406@gmail.com" class="text-white text-decoration-none footer-link px-3 py-2 rounded">Email</a>
+            <a href="https://wa.me/9773911475" target="_blank" class="text-white text-decoration-none footer-link px-3 py-2 rounded">WhatsApp</a>
         </div>
 
-        <hr class="border-secondary opacity-25">
+        <hr class="border-secondary opacity-25 my-4">
         
-        <footer class="mt-4">
+        <footer>
             <p class="small text-secondary mb-0">&copy; 2026 Nisha Kashyap. All rights reserved.</p>
         </footer>
     </div>
 </section>
 
-<script src="js.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
